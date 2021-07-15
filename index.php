@@ -44,30 +44,28 @@
                         <h1>Últimos 5 Tickets</h1>
                     </div>
                 </div>
-            </div>
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <!-- <th>Id</th> -->
-                        <th>Ticket</th>
-                        <th>Fecha y Hora</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Ticket</th>
+                            <th>Fecha y Hora</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
                         $query = "SELECT * FROM Tickets ORDER BY creation_date DESC limit 5;" ;
                         $result = mysqli_query( $conn, $query );
-
                         while ($row = mysqli_fetch_array($result)) { ?>
                             <tr>
                                 <!-- <td><?= $row['id']; ?></td> -->
                                 <td><?= $row['content']; ?></td>
                                 <td><?= $row['creation_date']; ?></td>
                             </tr>
-                    <?php } ?>
-                </tbody>
-            </table>
-        </div>
+                            <?php } ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
     </div>
 </div>
 
