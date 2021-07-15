@@ -30,7 +30,7 @@
                                 <td><?= $row['creation_date']; ?></td>
                                 <td>
                                         <a href="delete_ticket.php?id= <?= $row['id'] ?>" class="btn btn-danger">Borrar</a>
-                                        <a href="delete_ticket.php?id= <?= $row['id'] ?>" class="btn btn-info">Editar</a>
+                                        <a href="edit_ticket.php?id= <?= $row['id'] ?>" class="btn btn-info">Editar</a>
                                 </td>
                             </tr>
                     <?php } ?>
