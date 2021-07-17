@@ -12,7 +12,7 @@
     <!-- Titulo -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a href="./index.php" class="navbar-brand">Cafe May Tickets de Recarga</a>
+        <a href="./index.php" class="navbar-brand">Guardado de Tickets</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
