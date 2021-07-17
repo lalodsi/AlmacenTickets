@@ -3,7 +3,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-8 mx-auto  my-4">
+        <div class="col-lg-8 col-md-10 col-sm mx-auto  my-4">
 
             <!-- Mensaje de estado de tareas -->
             <?php if (isset($_SESSION['message'])) { ?>
@@ -26,7 +26,7 @@
             <div class="card mb-5">
                 <div class="card-body">
                     <h5 class="card-title">Tickets</h5>
-                    <p class="card-text">Pega aquí cada un sólo ticket</p>
+                    <p class="card-text">Pega aquí un sólo ticket</p>
                         <form action="add_ticket.php" method="POST">
                             <div class="mb-3">
                                 <textarea name="Ticket" rows="3" class="form-control" required></textarea>
