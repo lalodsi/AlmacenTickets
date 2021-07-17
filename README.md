@@ -5,9 +5,14 @@ El proyecto sirve para guardar de manera ordenada un conjunto de tickets represe
 
 Algunas capturas de su funcionamiento
 
+## Funcionamiento
+
 ![Imagen1](https://github.com/lalodsi/AlmacenTickets/blob/master/RM_images/cap1.png)
 ![Imagen1](https://github.com/lalodsi/AlmacenTickets/blob/master/RM_images/cap2.png)
 ![Imagen1](https://github.com/lalodsi/AlmacenTickets/blob/master/RM_images/cap3.png)
+
+## Para celular
+
 ![Imagen1](https://github.com/lalodsi/AlmacenTickets/blob/master/RM_images/cap4.png)
 ![Imagen1](https://github.com/lalodsi/AlmacenTickets/blob/master/RM_images/cap5.png)
 ![Imagen1](https://github.com/lalodsi/AlmacenTickets/blob/master/RM_images/cap6.png)
