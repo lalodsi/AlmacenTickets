@@ -25,7 +25,7 @@ include('include/header.php');
 
 <div class="container mt-4">
     <div class="row">
-        <div class="col-6 mx-auto">
+        <div class="col-lg-6 col-md-10 col-sm mx-auto">
             <div class="card">
                 <div class="card-body">
                     <h1>Editando Ticket</h1>
