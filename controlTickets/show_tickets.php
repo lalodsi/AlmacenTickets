@@ -1,5 +1,5 @@
-<?php include('db.php'); ?>
-<?php include('include/header.php'); ?>
+<?php include('../db.php'); ?>
+<?php include('./header.php'); ?>
 
 <div class="container">
     <div class="row">
@@ -29,8 +29,8 @@
                                     <td><?= $row['content']; ?></td>
                                     <td><?= $row['creation_date']; ?></td>
                                     <td>
-                                            <a href="delete_ticket.php?id= <?= $row['id'] ?>" class="btn btn-danger">Borrar</a>
-                                            <a href="edit_ticket.php?id= <?= $row['id'] ?>" class="btn btn-info">Editar</a>
+                                            <a href="./delete_ticket.php?id= <?= $row['id'] ?>" class="btn btn-danger">Borrar</a>
+                                            <a href="./edit_ticket.php?id= <?= $row['id'] ?>" class="btn btn-info">Editar</a>
                                     </td>
                                 </tr>
                         <?php } ?>
@@ -41,4 +41,4 @@
     </div>
 </div>
 
-<?php include('include/footer.php'); ?>
+<?php include('../include/footer.php'); ?>

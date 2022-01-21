@@ -1,5 +1,5 @@
 <?php
-include('db.php');
+include('../db.php');
 
 //Consulta el contenido en la base de datos
 if (isset($_GET['id'])) {
@@ -20,7 +20,7 @@ if (isset($_POST['update'])) {
 }
 
 
-include('include/header.php');
+include('./header.php');
 ?>
 
 <div class="container mt-4">
@@ -44,4 +44,4 @@ include('include/header.php');
     </div>
 </div>
 
-<?php include('include/footer.php'); ?>
+<?php include('./footer.php'); ?>

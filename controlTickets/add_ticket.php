@@ -1,6 +1,6 @@
 <?php
 
-include('db.php');
+include('../db.php');
 
 if(isset($_POST['save_ticket'])){
     $content = $_POST['Ticket'];
@@ -11,4 +11,4 @@ if(isset($_POST['save_ticket'])){
     $_SESSION['message_type'] = "success";
 }
 
-header('Location: index.php');
+header('Location: content.php');
