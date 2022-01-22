@@ -31,6 +31,9 @@
                                     <td>
                                             <a href="./delete_ticket.php?id= <?= $row['id'] ?>" class="btn btn-danger">Borrar</a>
                                             <a href="./edit_ticket.php?id= <?= $row['id'] ?>" class="btn btn-info">Editar</a>
+                                            <a href="./action_ticket.php?id= <?= $row['id'] ?>" class="btn btn-warning">
+                                            Imprimir <img class='impresora' src="./images/print.png" alt="Imagen impresora">
+                                            </a>
                                     </td>
                                 </tr>
                         <?php } ?>

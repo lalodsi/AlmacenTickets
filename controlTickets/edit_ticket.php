@@ -4,7 +4,7 @@ include('../db.php');
 //Consulta el contenido en la base de datos
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-    $query = "SELECT * FROM Tickets WHERE id='$id'";
+    $query = "SELECT * FROM Tickets WHERE id=$id";
     $result = mysqli_query($conn, $query);
     $row = mysqli_fetch_array($result);
 }

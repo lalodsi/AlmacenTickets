@@ -4,11 +4,10 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-lg-8 col-md-10 col-sm mx-auto  my-4">
+        <div class="col-lg-8 col-md-10 col-sm mx-auto my-4">
 
             <!-- Mensaje de estado de tareas -->
             <?php if (isset($_SESSION['message'])) { ?>
-
                 <!-- Generar el Simbolo de una palomita -->
                 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
                     <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
@@ -28,12 +27,15 @@
                 <div class="card-body">
                     <h5 class="card-title">Tickets</h5>
                     <p class="card-text">Pega aquí un sólo ticket</p>
-                        <form action="add_ticket.php" method="POST">
+                        <form action="action_ticket.php" method="POST">
                             <div class="mb-3">
                                 <textarea name="Ticket" rows="3" class="form-control" required></textarea>
                             </div>
-                            <input type="submit" class="btn btn-primary" name="save_ticket"
-                            value="Agregar Ticket">
+                            <input type="submit" class="btn btn-primary" name="save_ticket" value="Guardar Ticket">
+                            <!-- <input type="image" src="./images/print.png" class="btn btn-warning" name="print_ticket" value="Imprimir Ticket"> -->
+                            <button type="submit" class="btn btn-warning" name="print_ticket">
+                                Imprimir <img class='impresora' src="./images/print.png" alt="Imagen impresora">
+                            </button>
                         </form>
                 </div>
             </div>
