@@ -1,24 +1,21 @@
 <?php
-use Mike42\Escpos\PrintConnectors\FilePrintConnector;
+require_once (__DIR__ . '/../vendor/autoload.php');
 use Mike42\Escpos\Printer;
+use Mike42\Escpos\EscposImage;
+use Mike42\Escpos\PrintConnectors\WindowsPrintConnector;
 
-function imprimirTicketPrueba(){
-    $connector = new FilePrintConnector("php://stdout");
-    $printer = new Printer($connector);
-    $printer -> text("Prueba de impresión de Lalo!\n");
-    $printer -> cut();
-    $printer -> close();
-}
 
 function imprimirTicket($content){
     try {
-        //Investigar
-        $connector = new FilePrintConnector("php://stdout");
+        $nombre_impresora = "LPT1"; 
+        $connector = new WindowsPrintConnector($nombre_impresora);
         $printer = new Printer($connector);
         //Imprimir todo el contenido
         $printer -> text($content);
-        $printer -> cut();
-        $printer -> close();
+        $printer->feed(3);
+        $printer->cut();
+        $printer->pulse();
+        $printer->close();
     } catch (\Throwable $th) {
         // die('No se pudo imprimir');
         $_SESSION['message'] = "No se ha podido imprimir el ticket";
