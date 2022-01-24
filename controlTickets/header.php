@@ -17,16 +17,16 @@ require __DIR__ . '/../vendor/autoload.php';
     <!-- Titulo -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a href="./index.php" class="navbar-brand">Cafe May Control</a>
+        <a href="#" class="navbar-brand">Control de Tickets</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Navegación -->
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link" aria-current="page" href="../index.php">Menu Principal</a>
+                <a class="nav-link" aria-current="page" href="../index.php">Regresar</a>
                 <a class="nav-link" href=".\content.php">Control Tickets</a>
-                <a class="nav-link" href=".\show_tickets.php">Tickets Guardados</a>
+                <a class="nav-link" href=".\show_tickets.php">Tickets de Hoy</a>
             </div>
         </div>
     </div>
