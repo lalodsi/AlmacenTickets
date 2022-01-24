@@ -1,13 +1,15 @@
 <?php
 
 include_once('../db.php');
+include_once('./analiza_datos.php');
 
-var_dump($_POST);
+// var_dump($_POST);
 
 // Sólo guardar ticket
 if(isset($_POST['save_ticket'])){
     // echo "Parte 1 \n";
     $content = $_POST['Ticket'];
+    analizaInformacion($content);
     $query = "INSERT INTO Tickets(content) VALUES ('$content');";
     $result = mysqli_query($conn, $query);
     $_SESSION['message'] = "Se ha guardado el ticket correctamente";

@@ -1,5 +1,6 @@
 <?php require_once('header.php'); ?>
 <?php require_once('../db.php'); ?>
+<?php require_once('./analiza_datos.php'); ?>
 
 
 <div class="container">
@@ -40,7 +41,9 @@
                 </div>
             </div>
             
-            <div class="card mb-3">
+            <!-- Mostrar las ventas del día -->
+            <div class="card mb-3 alert-primary">
+                <?php $resultados = analizaTicketsDelDia($conn); ?>
                 <div class="container">
                     <h5 class="card-title mt-3">Ventas de Hoy</h5>
                     <div class="row mb-2 alert">
@@ -48,7 +51,7 @@
                             Recargas Realizadas
                         </div>
                         <div class="col-2 valor alert-info">
-                            00,00
+                            <?= $resultados['cantidadTickets'] ?>
                         </div>
                     </div>
                     <div class="row mb-2 alert">
@@ -56,17 +59,17 @@
                             Total Ventas de Hoy
                         </div>
                         <div class="col-2 valor alert-info">
-                            0
+                            <?= $resultados['TotalVentas'] ?>
                         </div>
                     </div>
-                    <div class="row mb-2 alert">
+                    <!-- <div class="row mb-2 alert">
                         <div class="col dato">
                             Ganancias
                         </div>
                         <div class="col-2 valor alert-info">
                             0
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
