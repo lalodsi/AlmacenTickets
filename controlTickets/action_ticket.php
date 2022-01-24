@@ -6,7 +6,7 @@ var_dump($_POST);
 
 // Sólo guardar ticket
 if(isset($_POST['save_ticket'])){
-    echo "Parte 1 \n";
+    // echo "Parte 1 \n";
     $content = $_POST['Ticket'];
     $query = "INSERT INTO Tickets(content) VALUES ('$content');";
     $result = mysqli_query($conn, $query);

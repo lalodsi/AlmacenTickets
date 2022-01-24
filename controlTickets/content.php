@@ -23,12 +23,12 @@
             <?php session_unset(); } ?>
 
             <!-- Formulario para Guardar Tickets -->
-            <div class="card mb-5">
+            <div class="card mb-3">
                 <div class="card-body">
-                    <h5 class="card-title">Tickets</h5>
+                    <h5 class="card-title">Agregar o Imprimir Tickets</h5>
                     <p class="card-text">Pega aquí un sólo ticket</p>
-                        <form action="action_ticket.php" method="POST">
-                            <div class="mb-3">
+                    <form action="action_ticket.php" method="POST">
+                        <div class="mb-3">
                                 <textarea name="Ticket" rows="3" class="form-control" required></textarea>
                             </div>
                             <input type="submit" class="btn btn-primary" name="save_ticket" value="Guardar Ticket">
@@ -37,6 +37,36 @@
                                 Imprimir <img class='impresora' src="./images/print.png" alt="Imagen impresora">
                             </button>
                         </form>
+                </div>
+            </div>
+            
+            <div class="card mb-3">
+                <div class="container">
+                    <h5 class="card-title mt-3">Ventas de Hoy</h5>
+                    <div class="row mb-2 alert">
+                        <div class="col dato">
+                            Recargas Realizadas
+                        </div>
+                        <div class="col-2 valor alert-info">
+                            00,00
+                        </div>
+                    </div>
+                    <div class="row mb-2 alert">
+                        <div class="col dato">
+                            Total Ventas de Hoy
+                        </div>
+                        <div class="col-2 valor alert-info">
+                            0
+                        </div>
+                    </div>
+                    <div class="row mb-2 alert">
+                        <div class="col dato">
+                            Ganancias
+                        </div>
+                        <div class="col-2 valor alert-info">
+                            0
+                        </div>
+                    </div>
                 </div>
             </div>
 
