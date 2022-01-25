@@ -15,13 +15,13 @@ require __DIR__ . '/../vendor/autoload.php';
 </head>
 <body>
     <!-- Titulo -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <a href="#" class="navbar-brand">Control de Tickets</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Navegación -->
+        
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-link" aria-current="page" href="../index.php">Regresar</a>
@@ -30,4 +30,15 @@ require __DIR__ . '/../vendor/autoload.php';
             </div>
         </div>
     </div>
-</nav>
+</nav> -->
+
+<div class="container mt-4 p-4 contenedor-transparente">
+    <div class="row">
+        <div class="col-3">
+                <div class="btn-group-vertical" role="group" aria-label="MenuPrincipal">
+                    <a class="btn btn-secondary nav-link" aria-current="page" href="../index.php">Inicio</a>
+                    <a class="btn btn-secondary nav-link" href=".\content.php">Control Tickets</a>
+                    <a class="btn btn-secondary nav-link" href=".\show_tickets.php">Tickets de Hoy</a>
+                </div>
+        </div>
+        <div class="col justify-content-center">

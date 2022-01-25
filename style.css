@@ -1,3 +1,11 @@
+html{
+    height: 100%;
+}
+body{
+    background-image: url('./include/images/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 button .impresora, a img{
     height: 25px;
 }
@@ -6,4 +14,50 @@ button .impresora, a img{
 }
 .imagen-ref:hover{
     opacity: 0.8;
+}
+.btn-group-vertical{
+    width: 100%;
+}
+.btn-group-vertical > .btn{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-color: white;
+    border-left: transparent;
+    border-right: transparent;
+    border-radius: 0;
+    height: 50px;
+    text-align: center;
+    /* opacity: 0; */
+}
+.contenedor-principal{
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* filter: blur(2px); */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.contenedor-transparente{
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+}
+tbody, thead{
+    color: white;
+}
+.card{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+.table{
+    background-color: rgba(0, 0, 0, 0.3);
+    
+}
+.mostrarResultados{
+    background-color: rgba(0, 0, 0, 0.3);
+    
+}
+textarea{
+    background-color: transparent;
 }

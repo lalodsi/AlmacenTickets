@@ -1,9 +1,8 @@
 <?php include('../db.php'); ?>
 <?php include('./header.php'); ?>
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-md-10 col-sm mx-auto mt-4">
+
+        <div class="col-lg col-md-10 col-sm mx-auto mt-4">
             <div class="col mb-3">
                 <h1>Tickets Guardados de hoy</h1>
             </div>
@@ -59,7 +58,5 @@
                 ?>
             </div>
         </div>
-    </div>
-</div>
 
 <?php include('../include/footer.php'); ?>
