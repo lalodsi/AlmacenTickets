@@ -49,7 +49,7 @@
                 }
                 else{
                     ?>
-                    <div class="jumbotron alert alert-danger p-4 mt-4">
+                    <div class="jumbotron alert p-4 mt-4">
                         <h1 class="display-5">Aún no has hecho recargas el día de hoy</h1>
                         <p class="lead">Se mostrará información cuando haya recargas.</p>
                     </div>
