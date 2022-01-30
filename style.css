@@ -5,9 +5,16 @@ body{
     background-image: url('./include/images/background.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+    color: white;
+}
+h1, h2, h3{
+    color: white;
 }
 button .impresora, a img{
     height: 25px;
+}
+textarea{
+    background-color: transparent;
 }
 .imagen-ref{
     height: 300px;
@@ -18,7 +25,7 @@ button .impresora, a img{
 .btn-group-vertical{
     width: 100%;
 }
-.btn-group-vertical > .btn{
+.btn-group-vertical > .btn, .btn-design{
     background-color: rgba(0, 0, 0, 0);
     color: white;
     border-color: white;
@@ -29,17 +36,19 @@ button .impresora, a img{
     text-align: center;
     /* opacity: 0; */
 }
+.btn-back{
+    background-color: rgba(255, 0, 0, 0.2);
+}
+.btn-group-vertical > .btn:hover, .btn-design:hover{
+    background-color: rgba(0, 0, 0, 0.459);
+    color: rgb(74, 144, 255);
+}
 .contenedor-principal{
-    height: 600px;
-    background-color: rgba(0, 0, 0, 0.3);
-    /* filter: blur(2px); */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 .contenedor-transparente{
     background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(10px);
     color: white;
 }
 tbody, thead{
@@ -48,19 +57,34 @@ tbody, thead{
 .card{
     background-color: rgba(0, 0, 0, 0.3);
     border-color: rgba(0, 0, 0, 0);
-    color: white;
 }
 .table{
-    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 .table > tbody > tr:hover{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
     color: white;
 }
 .mostrarResultados{
     background-color: rgba(0, 0, 0, 0.3);
     
 }
-textarea{
-    background-color: transparent;
+
+.opcionesBusqueda, .menuSeleccion{
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.opcionesBusqueda > .menu, .menuSeleccion > .menu{
+    padding: 15px;
+}
+.menu > form > label{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.mostrarContenido{
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
 }
