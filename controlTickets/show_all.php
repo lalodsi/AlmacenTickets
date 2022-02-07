@@ -10,30 +10,44 @@
         <div class="menu">
             <h3>Selecciona la forma de búsqueda</h3>
             <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-design">Por fecha</button>
-                <button type="button" class="btn btn-design">insertar datos</button>
-                <button type="button" class="btn btn-design">Busqueda avanzada</button>
+                <button type="button" class="btn btn-design" id="btnSelectForm">Por fecha</button>
+                <button type="button" class="btn btn-design" id="btnSelectForm">buscar por datos</button>
+                <button type="button" class="btn btn-design" id="btnSelectForm">Busqueda avanzada</button>
             </div>
         </div>
         <div class="menuSeleccion">
             <div class="menu" action="">
                 <h2>Elige la fecha de consulta</h2>
-                <form action="">
+                <form name="dateSearch" action="" onsubmit="return inicializarForm();" method="post">
                     <label for="year">Fecha:</label> <input type="date" name="" id="">
                     <br>
                     <button type="submit">Buscar</button>
                 </form>
             </div>
-            <!-- <div class="menu" action="">
+            <div class="menu" action="">
                 <h2>Buscar por datos</h2>
-                <form action="">
+                <form name="dataSearch" action="">
                     <label for="amount">Cantidad:</label> <input type="number" name="" id="">
                     <br>
                     <label for="phone">Teléfono:</label> <input type="number" name="" id="">
                     <br>
                     <button type="submit">Buscar</button>
                 </form>
-            </div> -->
+            </div>
+            <div class="menu" action="">
+                <h2>Búsqueda Avanzada</h2>
+                <form name="dataSearch" action="">
+                    <label for="text">Teléfonos que contengan lo siguiente:</label> <input type="text" name="" id="">
+                    <br>
+                    <label for="date">Recargas hechas alrededor de cierto día y hora específica:</label> 
+                    <br>
+                    
+                    <input type="date" name="" id="">
+                    <input type="time" name="" id="">
+                    <br>
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
         </div>
     </div>
     <div class="mostrarContenido menuDatos">
