@@ -39,4 +39,14 @@ class HTMLManager{
             } )
         } )
     }
+    
+    DontRefresh = function(){
+        const botones = document.querySelectorAll('#botonSubmit');
+        arrayBotones = this.devolverArrayHTML(botones);
+        arrayBotones.forEach( el => {
+            el.addEventListener( 'click', () => {
+                event.preventDefault();
+            } )
+        })
+    }
 }

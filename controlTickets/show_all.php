@@ -21,17 +21,17 @@
                 <form name="dateSearch" action="" onsubmit="return inicializarForm();" method="post">
                     <label for="year">Fecha:</label> <input type="date" name="" id="">
                     <br>
-                    <button type="submit">Buscar</button>
+                    <button type="submit" id="botonSubmit">Buscar</button>
                 </form>
             </div>
-            <div class="menu" action="">
+            <div class="menu" action="show_all.php">
                 <h2>Buscar por datos</h2>
                 <form name="dataSearch" action="">
-                    <label for="amount">Cantidad:</label> <input type="number" name="" id="">
+                    <label for="amount">Cantidad:</label> <input type="number" name="cantidad" id="">
                     <br>
                     <label for="phone">Teléfono:</label> <input type="number" name="" id="">
                     <br>
-                    <button type="submit">Buscar</button>
+                    <button type="submit" id="botonSubmit">Buscar</button>
                 </form>
             </div>
             <div class="menu" action="">
@@ -45,7 +45,7 @@
                     <input type="date" name="" id="">
                     <input type="time" name="" id="">
                     <br>
-                    <button type="submit">Buscar</button>
+                    <button type="submit" id="botonSubmit">Buscar</button>
                 </form>
             </div>
         </div>
@@ -53,10 +53,15 @@
     <div class="mostrarContenido menuDatos">
         <?php
             // $date = date('Y-m-d');
-            $date = "2022-01-24";
-            $query = "SELECT * FROM Tickets WHERE creation_date LIKE '" . $date . "%';";
-            $result = mysqli_query( $conn, $query );
-            if ( $row = mysqli_fetch_array($result) ) {
+            if(isset($_GET['nombre'])){
+                $nombre = $_GET['nombre'];
+                $cantidad = $_GET['cantidad'];
+                echo $nombre;
+                echo $cantidad;
+                $date = "2022-01-24";
+                $query = "SELECT * FROM Tickets WHERE creation_date LIKE '" . $date . "%';";
+                $result = mysqli_query( $conn, $query );
+                if ( $row = mysqli_fetch_array($result) ) {
         ?>
             <h1>Hola</h1>
             <table class="table table-hover">
@@ -78,7 +83,7 @@
                     <?php } ?>
                 </tbody>
             </table>
-        <?php } ?>
+        <?php } } ?>
     </div>
     <!-- <div id="calendar-container"></div> -->
     

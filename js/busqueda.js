@@ -3,8 +3,22 @@ class busqueda{
         // this.form = document.forms['formName'];
     }
 
+    /**
+     * 
+     */
     extraerFormulario(){
-        console.log("Se esta extrayendo el form");
+        const request = new XMLHttpRequest();
+        const string = "nombre=luis";
+        request.onload = function(){
+            // Todo
+            console.log(string);
+        }
+        request.open("GET", `show_all.php?${string}`);
+        request.send();
+    }
+
+    enviarQuery(){
+
     }
     
 }
