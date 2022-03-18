@@ -45,7 +45,9 @@ class HTMLManager{
         arrayBotones = this.devolverArrayHTML(botones);
         arrayBotones.forEach( el => {
             el.addEventListener( 'click', () => {
-                event.preventDefault();
+                // event.preventDefault();
+                // const buscar = new busqueda();
+                // buscar.extraerFormulario();
             } )
         })
     }

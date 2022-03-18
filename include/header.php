@@ -41,3 +41,6 @@
             <a href=".\controlTickets\content.php">
                 <img src="./controlTickets/images/ControldeTicketsLogo.png" class="imagen-ref">
             </a>
+            <a href=".\monografias\">
+                <img src="./monografias/images/monografiasicon.png" class="imagen-ref">
+            </a>

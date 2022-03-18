@@ -3,12 +3,12 @@
 
 
         <div class="col-lg col-md-10 col-sm mx-auto mt-4">
-            <div class="col mb-3">
-                <h1>Tickets Guardados de hoy</h1>
-            </div>
-
+            
             <!-- Tabla con el contenido de la base de datos -->
-            <div class="table-responsive-sm table-responsive-md">
+            <div class="contenido table-responsive-sm table-responsive-md">
+                <div class="col mb-3">
+                    <h1>Tickets Guardados de hoy</h1>
+                </div>
                 <?php
                 // Extraer Datos
                     $date = date('Y-m-d');

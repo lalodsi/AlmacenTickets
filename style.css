@@ -2,9 +2,7 @@ html{
     height: 100%;
 }
 body{
-    background-image: url('./include/images/background.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgb(145, 136, 136);
     color: white;
 }
 h1, h2, h3{
@@ -70,6 +68,10 @@ tbody, thead{
     
 }
 
+.menu{
+    text-align: center;
+}
+
 .opcionesBusqueda, .menuSeleccion{
     margin-top: 20px;
     border-radius: 15px;
@@ -87,4 +89,23 @@ tbody, thead{
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.3);
     padding: 15px;
+}
+.contenido{
+    height: 500px;
+    padding-right: 50px;
+    padding-left: 50px;
+    overflow-y: scroll;
+}
+.contenido::-webkit-scrollbar{
+    width: 20px;
+}
+.contenido::-webkit-scrollbar-track{
+    background: rgba(0, 0, 0, 0);
+}
+.contenido::-webkit-scrollbar-thumb {
+    background-color: #00000000;
+    border: 3px solid #ffffff;
+}
+th{
+    margin: 5px;
 }

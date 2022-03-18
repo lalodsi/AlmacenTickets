@@ -9,7 +9,7 @@ $conn = mysqli_connect(
     '',
     'CafeMay_Recargas'
 );
-
+mysqli_query($conn,"SET NAMES 'utf8'");
 // if(isset($conn)){
 //     echo 'Base de datos conectada';
 // }

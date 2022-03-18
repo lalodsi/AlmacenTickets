@@ -3,7 +3,7 @@
 <?php require_once('./analiza_datos.php'); ?>
 
 
-<div class="col-lg ">
+<div class="contenido col-lg ">
 
     <!-- Mensaje de estado de tareas -->
     <?php if (isset($_SESSION['message'])) { ?>
