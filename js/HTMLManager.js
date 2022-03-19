@@ -39,16 +39,26 @@ class HTMLManager{
             } )
         } )
     }
-    
-    DontRefresh = function(){
-        const botones = document.querySelectorAll('#botonSubmit');
-        arrayBotones = this.devolverArrayHTML(botones);
-        arrayBotones.forEach( el => {
-            el.addEventListener( 'click', () => {
-                // event.preventDefault();
-                // const buscar = new busqueda();
-                // buscar.extraerFormulario();
-            } )
+    search = function () {
+        const botonBusqueda = document.getElementById("search");
+        botonBusqueda.addEventListener("keyup", (element)=> {
+            console.log(element.path[0].value);
+            const request = new XMLHttpRequest();
+            request.onload = function(){
+                // Todo
+                const contenedor = document.getElementsByClassName("contenido")[0];
+                console.log(this.responseText);
+                contenedor.innerHTML = this.responseText;
+            }
+            request.open("GET", `search.php?search=${element.path[0].value}`);
+            request.send();
+
+            request.onreadystatechange = () => {
+                if(this.readyState == 4 && this.status == 200) {
+
+                }
+            }
         })
     }
+    
 }
