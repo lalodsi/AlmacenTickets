@@ -20,8 +20,8 @@ if ($cantidad > 0) {
     <thead>
         <tr>
             <th>Nombre</th>
-            <!-- <th>Cantidad</th>
-            <th>Opciones</th> -->
+            <th>Ubicacion</th>
+            <!-- <th>Opciones</th> -->
         </tr>
     </thead>
     <tbody>
@@ -30,8 +30,8 @@ if ($cantidad > 0) {
         ?>
         <tr>
             <th><?= $row['monografia'] ?></th>
-            <!-- <th><?= $row['cantidad'] ?></th>
-            <th>
+            <th><?= $row['ubicacion'] ?></th>
+            <!-- <th>
                 hola
             </th> -->
         </tr>
