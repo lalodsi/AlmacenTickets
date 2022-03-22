@@ -37,7 +37,7 @@ require __DIR__ . '/../vendor/autoload.php';
     <div class="row">
         <div class="col-3">
                 <div class="btn-group-vertical" role="group" aria-label="MenuPrincipal">
-                    <a class="btn btn-secondary nav-link" aria-current="page" href="../index.php">Regresar</a>
+                    <a class="btn btn-secondary nav-link btn-back" aria-current="page" href="../index.php">Regresar</a>
                     <a class="btn btn-secondary nav-link" href=".\content.php">Control Tickets</a>
                     <a class="btn btn-secondary nav-link" href=".\show_tickets.php">Tickets de Hoy</a>
                     <a class="btn btn-secondary nav-link" href=".\show_all.php">Buscar Tickets</a>

@@ -1,3 +1,7 @@
+:root{
+    --transparente: rgba(0, 0, 0, 0);
+    --translucido: rgba(0, 0, 0, 0.175);
+}
 html{
     height: 100%;
 }
@@ -32,40 +36,39 @@ textarea{
     border-radius: 0;
     height: 50px;
     text-align: center;
-    /* opacity: 0; */
 }
 .btn-back{
     background-color: rgba(255, 0, 0, 0.2);
 }
 .btn-group-vertical > .btn:hover, .btn-design:hover{
-    background-color: rgba(0, 0, 0, 0.459);
+    background-color: var(--translucido);
     color: rgb(74, 144, 255);
 }
 .contenedor-principal{
     border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.6);
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    background-color: var(--translucido);
 }
 .contenedor-transparente{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: var(--translucido);
     color: white;
 }
 tbody, thead{
     color: white;
 }
 .card{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: var(--translucido);
     border-color: rgba(0, 0, 0, 0);
 }
 .table{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: var(--translucido);
 }
 .table > tbody > tr:hover{
     background-color: rgba(255, 255, 255, 0.3);
     color: white;
 }
 .mostrarResultados{
-    background-color: rgba(0, 0, 0, 0.3);
-    
+    background-color: var(--translucido);
 }
 
 .menu{
@@ -75,7 +78,8 @@ tbody, thead{
 .opcionesBusqueda, .menuSeleccion{
     margin-top: 20px;
     border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: var(--translucido);
+    /* background-color: rgba(0, 0, 0, 0.123); */
 }
 .opcionesBusqueda > .menu, .menuSeleccion > .menu{
     padding: 15px;
@@ -87,7 +91,7 @@ tbody, thead{
 .mostrarContenido{
     margin-top: 20px;
     border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: var(--translucido);
     padding: 15px;
 }
 .contenido{
