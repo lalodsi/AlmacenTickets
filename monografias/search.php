@@ -16,7 +16,7 @@ $cantidad = mysqli_num_rows($result);
 if ($cantidad > 0) {
 ?>
 
-<table>
+<table class="table table-hover">
     <thead>
         <tr>
             <th>Nombre</th>
