@@ -26,3 +26,6 @@
             <a href=".\monografias\">
                 <img src="./monografias/images/monografiasicon.png" class="imagen-ref">
             </a>
+            <a href=".\controlVentas\">
+                <img src="./controlVentas/images/controlVentasIcon.png" class="imagen-ref">
+            </a>
