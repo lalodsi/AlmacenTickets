@@ -32,6 +32,10 @@ if (isset($_GET['operation'])) {
     
         $_SESSION['message'] = "Se ha agregado la nueva categoría";
     }
+
+    if ($operacion == "sale") {
+        
+    }
 }
 
 header("Location: index.php");

@@ -15,10 +15,12 @@
 
 <div class="container mt-4 p-4 contenedor-principal">
     <div class="row">
-        <div class="col-3">
+        <div class="col-2">
             <div class="btn-group-vertical" role="group" aria-label="MenuPrincipal">
                 <a class="btn btn-secondary" aria-current="page" href="../index.php">Regresar</a>
+                <a class="btn btn-secondary" aria-current="page" id="ventasButton">Ventas</a>
+                <a class="btn btn-secondary" aria-current="page" id="inventarioButton">Inventario</a>
             </div>
         </div>
-        <div class="col-8 justify-content-center">
+        <div class="col-10 justify-content-center">
             
