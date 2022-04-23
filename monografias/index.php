@@ -13,7 +13,8 @@ include('./header.php');
     <!-- <button class="btn btn-primary" type="submit" id="botonSubmit">Buscar</button> -->
 </form>
 
-<div class="contenido">          
+<div class="contenido"> 
+    <h1><center>Teclea algo para mostrar los resultados</center></h1>         
 </div>
 
 <?php
