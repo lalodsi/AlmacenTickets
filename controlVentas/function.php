@@ -29,8 +29,22 @@ if (isset($_GET['operation'])) {
         $query = "INSERT INTO categorias (nombre) VALUES ('" . $nombre . "');";
         echo $query;
         // $result = mysqli_query( $conn, $query );
-    
+        
         $_SESSION['message'] = "Se ha agregado la nueva categoría";
+    }
+    
+    if ($operacion == "add_service") {
+        $nombre = $_GET["nombre-servicio"];
+        $precio = $_GET["precio-venta"];
+        $categoria = $_GET["categoria"];
+        
+        $query = "INSERT INTO servicios (nombre, precio, categoria_id) VALUES" .
+        "('" . $nombre . "', " .
+        "'" . $precio . "', " .
+        "'" . $categoria . "');";
+
+        $result = mysqli_query( $conn, $query );
+        $_SESSION['message'] = "Se ha agregado el nuevo servicio";
     }
 
     if ($operacion == "sale") {
@@ -38,4 +52,4 @@ if (isset($_GET['operation'])) {
     }
 }
 
-header("Location: index.php");
+// header("Location: index.php");

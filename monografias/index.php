@@ -10,7 +10,6 @@ include('./header.php');
     <br>
     <input class="form-control contenedor-transparente" type="text" name="search" id="search" autofocus>
     <br>
-    <!-- <button class="btn btn-primary" type="submit" id="botonSubmit">Buscar</button> -->
 </form>
 
 <div class="contenido"> 
