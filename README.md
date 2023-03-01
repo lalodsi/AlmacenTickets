@@ -1,5 +1,5 @@
 # CafeMayControl
-Conjunto de programas cuya función es ayudar en las operaciones diarias de un negocio logal
+Conjunto de programas cuya función es ayudar en las operaciones diarias de un negocio local
 
 El proyecto consta de 2 secciones y una en construccion:
 - Control Tickets: Almacena, edita, imprime y analiza tickets de venta
